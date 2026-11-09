@@ -1,0 +1,20 @@
+{
+  "name": "dribbble-cli",
+  "version": "1.0.0",
+  "description": "CLI for searching design jobs (product, UI/UX, web, graphic, brand) on Dribbble's public job board, worldwide and remote — no authentication, zero runtime dependencies. Personal use only (Dribbble ToS).",
+  "type": "module",
+  "main": "src/cli.ts",
+  "bin": {
+    "dribbble-search": "src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "test": "bun test --timeout 30000",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/bun": "1.3.14"
+  }
+}
